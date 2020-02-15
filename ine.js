@@ -3,5 +3,12 @@ function getgalery(){
     let iterator = fetch(url);
     iterator
       .then(response => response.json())
-      .then(post => document.getElementById("demo").innerHTML=(post.res));
+      .then(post => {
+        for(i = 0 ; i<post.res.length; i++){
+          document.getElementById("demo").innerHTML+=('<img class="col-md-6" src="./image/'+post.res[i]+'">')
+        }
+        });
+}
+function show(){
+  document.getElementsByClassName("contact_list")[0].style.display = "block"
 }

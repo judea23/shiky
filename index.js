@@ -11,14 +11,14 @@ var server = app.listen(8080, function () {
 app.use(cors())
 
 app.get('/', (req, res) => {
-  var yair
   var directory = './image'; 
 	fs.readdir(directory, (err, files) => {
-		for(i = 0 ; i<files.length; i++){
-      yair +='<img src="./image/'+files[i]+'">'
+    // var yair
+    // for(i = 0 ; i<files.length; i++){
+    //   yair +='<img src="./image/'+files[i]+'">'
       
-    }
-    res.send({"res":yair})
+    // }
+    res.send({"res":files})
   })
 });
 
