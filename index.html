@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="ine.js"></script>
     <style>
     /* Make the image fully responsive */
     .carousel-inner img {
       width: 100%;
-      height: 55%;
+      height: 50%;
     }
     .carousel-inner{
         position: relative;
@@ -23,6 +23,20 @@
     height: 1000px;
     left: 24%;
     top: 100px;
+    }
+    .contact{
+        border-radius: 50%;
+        background-color: green;
+        position: fixed;
+        bottom: 13px;
+        right: 13px;
+    }
+    .contact_list{
+        position: fixed;
+        bottom: 50px;
+        right: 13px;
+        
+
     }
     </style>
     <title>שייקה הגנן</title>
@@ -34,7 +48,6 @@
             <h2 >שייקה הגנן!!</h2>
             <h4>מומחה לעבודות גינון</h4>
             <h6  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit enim incidunt exercitationem accusantium debitis nihil illum aspernatur quam. Alias.</h6>
-<input type="tel" placeholder="דבר איתי" style="background-color: yellowgreen;height: 50px;border-radius: 42px;text-align: center;margin: 50px;font-size: 3rem;cursor: pointer;">
         </span>
 
     </div>
@@ -76,8 +89,16 @@
         </div>
         
         </div>
-        <a href="test.html" style="text-align: center;background-color: yellowgreen;height: 50px;border-radius: 42px;margin: 50px;font-size: 3rem;cursor: pointer;">לגלריה המלאה
+        <a href="test.html" style="text-align: center;background-color: yellowgreen;height: 50px;border-radius: 42px;margin: 50px;font-size: 3rem;cursor: pointer;">לגלריה המלאה</a>
     </div>
+<div class="contact" onclick="show()">צור קשר</div>
+<div style="display: none;" class="contact_list">
+    <ul>
+        <li>whatsApp</li>
+        <li>mail</li>
+        <li>phone</li>
+    </ul>
+</div>
 
 </body>
 
